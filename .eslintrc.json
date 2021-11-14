@@ -1,0 +1,81 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "jest": true
+    },
+    "extends": ["plugin:react/recommended", "airbnb"],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 13,
+        "sourceType": "module"
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }
+        }
+    },
+    "plugins": ["react", "@typescript-eslint"],
+    "rules": {
+        "func-names": 0,
+        "jsx-a11y/href-no-hash": ["off"],
+        "react/jsx-props-no-spreading": ["off"],
+        "react/jsx-filename-extension": [
+            "warn",
+            { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
+        ],
+        "no-console": [
+            "error",
+            {
+                "allow": ["warn", "error"]
+            }
+        ],
+        "multiline-ternary": 0,
+        "no-unused-vars": "off",
+        "no-shadow": 0,
+        "@typescript-eslint/no-unused-vars": "error",
+        "no-useless-constructor": "off",
+        "no-use-before-define": "off",
+        "indent": "off",
+        "react/jsx-indent": 0,
+        "react/jsx-one-expression-per-line":0,
+        "react/jsx-indent-props":0,
+        "comma-dangle":0,
+        "@typescript-eslint/no-use-before-define": ["error"],
+        "@typescript-eslint/no-useless-constructor": "error",
+        "import/no-extraneous-dependencies": [
+            "error",
+            { "devDependencies": true }
+        ],
+        "react/prop-types": 0,
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "js": "never",
+                "jsx": "never",
+                "ts": "never",
+                "tsx": "never"
+            }
+        ],
+        "max-len": [
+            "warn",
+            {
+                "code": 80,
+                "tabWidth": 2,
+                "comments": 80,
+                "ignoreComments": false,
+                "ignoreTrailingComments": true,
+                "ignoreUrls": true,
+                "ignoreStrings": true,
+                "ignoreTemplateLiterals": true,
+                "ignoreRegExpLiterals": true
+            }
+        ]
+    }
+}
